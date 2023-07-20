@@ -738,6 +738,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   margin-bottom: 4px;
+  border-color: none;
 }
 
 .modal-form-btn {
@@ -775,6 +776,10 @@ img {
   resize: none;
 }
 
+.modal-text-area:focus {
+  border-color: var(--iris-color);
+}
+
 .check-text {
   color: var(--lightslate);
   font-size: 12px;
@@ -798,4 +803,24 @@ img {
   border-radius: 2px;
   border: 1px solid var(--navyblue-color, rgba(46, 47, 66, 0.4));
   margin-right: 8px;
+  fill: transparent;
+  padding: 4px 3px;
+}
+
+/* .modal-input-icon {
+  margin: 4px 3px;
+} */
+
+.modal-check:checked + .check-text span {
+  background-color: var(--ocean-color);
+  border: none;
+  fill: var(--white-color);
+}
+
+.modal-check:focus + .check-text span {
+  border-color: var(--iris-color);
+}
+
+a {
+  margin-left: 3px;
 }
