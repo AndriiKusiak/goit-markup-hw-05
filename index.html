@@ -455,7 +455,7 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-field">
-            <label class="modal-input-label" for="modal-user">
+            <label class="modal-input-label" for="user-name" name="user-name">
               <span class="modal-input-label-text">Name</span>
             </label>
             <div class="input-wrap">
@@ -463,9 +463,9 @@
                 type="text"
                 name="modal-user-name"
                 class="modal-input"
-                id="modal-user"
+                id="user-name"
               />
-              <svg class="modal-input-icon" width="18" height="18">
+              <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -503,12 +503,12 @@
             </div>
           </div>
           <div class="modal-field">
-            <label class="modal-input-label" for="user-text">
+            <label class="modal-input-label" for="user-comment">
               <span class="modal-input-label-text">Comment</span></label
             >
             <textarea
-              name="user-text"
-              id="user-text"
+              name="user-comment"
+              id="user-comment"
               class="modal-text-area"
               placeholder="Text input"
             ></textarea>
@@ -516,12 +516,13 @@
           <div class="modal-field">
             <input
               type="checkbox"
-              name="user-accept"
-              id="user-accept"
+              name="user-privacy"
+              id="user-privacy"
               class="modal-check visually-hidden"
+              value="true"
             />
-            <label for="user-accept" class="check-text"
-              ><span>
+            <label for="user-privacy" class="check-text"
+              ><span class="check-text-span">
                 <svg class="accept-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-accept-click"></use>
                 </svg>
