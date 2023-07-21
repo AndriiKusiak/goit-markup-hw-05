@@ -790,7 +790,7 @@ img {
   fill: var(--iris-color);
 }
 .modal-input-label {
-  display: block;
+  /* display: block; */
   color: var(--lightslate);
   font-size: 12px;
   line-height: 1.17;
