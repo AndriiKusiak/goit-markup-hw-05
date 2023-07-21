@@ -380,7 +380,6 @@
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-container">
@@ -425,7 +424,27 @@
             </li>
           </ul>
         </div>
+        <div class="form-footer-container">
+          <p class="footer-subscribe">Subscribe</p>
+          <form class="footer-form">
+            <label class="footer-label" aria-label="Subscribe">
+              <input
+                class="footer-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-form-button" type="submit">
+              Subscribe
+              <svg class="footer-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-frame"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
+    </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -502,12 +521,9 @@
               class="modal-check visually-hidden"
             />
             <label for="user-accept" class="check-text"
-              ><span width="10" height="8">
-                <svg>
-                  <use
-                    href="./images/icons.svg#icon-accept-click"
-                    class="accept-icon"
-                  ></use>
+              ><span>
+                <svg class="accept-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-accept-click"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
